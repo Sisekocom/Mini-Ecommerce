@@ -1,3 +1,9 @@
 body{
-    background-color: antiquewhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://excelleretechnologies.com/img/ecommerce/eCommerce--Animated-GIF.gif);
+}
+img[alt="logo"]{
+    aspect-ratio: 1/1;
+    width: 5rem ;
 }
