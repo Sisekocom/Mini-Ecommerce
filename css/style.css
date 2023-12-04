@@ -1,3 +1,48 @@
-body{
-    background-color: antiquewhite;
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f8f9fa;
+    background-image: url('https://th.bing.com/th/id/R.a2b3268c384d858b81b623cd466a169c?rik=Hwf5a3VY3D63JA&pid=ImgRaw&r=0');
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.text {
+    font-family: 'Pacifico', sans-serif;
+    display: inline-block;
+    font-size: 3em;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateZ(5deg);
+}
+
+.char {
+    display: inline-block;
+    transform-origin: center center -50px;
+    transition: transform 0.5s;
+}
+
+.char:hover {
+    transform: rotateX(-45deg) rotateZ(-45deg) scale(1.2);
+}
+
+footer {
+    font-weight: bolder;
+    font-size: larger;
+}
+img{
+    aspect-ratio: 1/1;
+    width: 4rem;
 }
